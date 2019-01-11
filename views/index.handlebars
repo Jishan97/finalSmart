@@ -1,28 +1,110 @@
-<div class="jumbotron">
-    <h1 class="display-4"> {{name}} </h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-        featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-</div>
-
-<div class="container">
-    <div class="row">
-        {{#each blogs}}
-        <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title"> {{name}}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-        </div>
-        {{/each}}
-
+{{!-- <form action="/create_blog" method="post" enctype="multipart/form-data">
+    <div> <label for="title">Title</label>
+        <input type="text" name="title" id="title"> </div>
+    <div>
+        <label for="image">Image</label>
+        <input type="file" name="image" id="image">
     </div>
-</div>
+    <button type="submit">Add Blog</button>
+</form> --}}
+<form class="text-center border border-light p-5">
+
+    <p class="h4 mb-4">Point of sale </p>
+
+    <div class="form-row mb-4 justify-content-center">
+        <div class="col-6">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Product Name">
+        </div>
+          </div>
+
+
+              <div class="form-row mb-4 justify-content-center">
+        <div class="col-6">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Product Price">
+        </div>
+          </div>
+
+
+                   <div class="form-row mb-4 justify-content-center">
+        <div class="col-6">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Product Barcode">
+        </div>
+          </div>
+
+                   <div class="form-row mb-4 justify-content-center">
+        <div class="col-6">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Product Title">
+        </div>
+          </div>
+
+
+                   <div class="form-row mb-4 justify-content-center">
+        <div class="col-6">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Product Details">
+        </div>
+          </div>
+
+
+                   <div class="form-row mb-4 justify-content-center">
+        <div class="col-6">
+            <!-- First name -->
+            <label for="image">Product Image</label>
+           <input type="file" name="image" id="image">
+        </div>
+          </div>
+        {{!-- <div class="col">
+            <!-- Last name -->
+            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+        </div> --}}
+  
+
+     {{!-- <div class="form-row mb-4">
+        <div class="col">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+            <!-- Last name -->
+            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+        </div>
+    </div>
+
+         <div class="form-row mb-4">
+        <div class="col">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+            <!-- Last name -->
+           <input type="file" name="image" id="image">
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+        <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+    </div> --}}
+
+    <!-- Sign up button -->
+            <div class="form-row mb-4 justify-content-center">
+        <div class="col-6">
+            <!-- First name -->
+   <button class="btn btn-info my-4 btn-block" type="submit">Add Product</button>        </div>
+          </div>
+ 
+
+ 
+    <hr>
+{{!-- 
+    <!-- Terms of service -->
+    <p>By clicking
+        <em>Sign up</em> you agree to our
+        <a href="" target="_blank">terms of service</a> --}}
+
+</form>

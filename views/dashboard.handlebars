@@ -1,0 +1,48 @@
+ <br>
+
+<div class="container">
+  <h2>Stock Management</h2>
+        <br>      
+  <table class="table">
+    <thead>
+      <tr>
+         
+        <th>Product Name</th>
+        <th>Product Barcode</th>
+        <th>Product Price</th>
+        <th>Product Quantity</th>
+        <th>
+              <form method="post" action="/deleteAll">
+           <input type="hidden" name="id" value="{{id}}">
+  <button class="btn btn-info" type="submit">DELETE All</button>
+            </form> </th>
+      </tr>
+    </thead>
+    <tbody>
+        {{#each point}}
+      <tr>
+        <td>{{Product_Title}}</td>
+        <td>{{Product_Barcode}}</td>
+        <td>{{Product_Price}}</td>
+        <td>20</td>
+        <th>
+            <form method="post" action="/delete">
+           <input type="hidden" name="id" value="{{id}}">
+  <button class="btn btn-danger" type="submit">DELETE</button>
+            </form>
+            </th>
+      </tr>
+      {{/each}}
+      {{!-- <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr> --}}
+    </tbody>
+  </table>
+</div>

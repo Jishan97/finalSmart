@@ -1,0 +1,14 @@
+  // async.concat([Point,MegaSale],function(model,callback) {
+  //   var query = model.find({}).sort({ "creationDate": -1 }).limit(10);
+  //   query.exec(function(err,docs) {
+  //     if (err) throw err;
+  //     callback(err,docs);
+  //   });
+  // },
+  // function(err,result) {
+  //   if (err) throw err;
+
+  //   res.send(result)
+  //   console.log(result);
+  
+  // });

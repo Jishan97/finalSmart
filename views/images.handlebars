@@ -1,0 +1,30 @@
+<div class="container-fluid">
+
+    <div class="row justify-content-center">
+        <div  class="col-12 text-center ">
+<div class="jumbotron jum bg-light">
+  <h1 style="color:black">Home Feed</h1> 
+ 
+  <p style="color:black">All products are displayed here!</p> 
+ <hr>
+</div>
+        </div>
+    </div>
+      <div class="row justify-content-center  mb-4"> 
+       
+        {{#each result}}
+        <div class="card shadow" style="width: 20rem;height:500px;margin:5px">
+            <img class="card-img-top "  height="300" style=" object-fit: cover;
+"  src={{this.imageUrl}} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{this.Product_Name}}</h5>
+                <p class="card-text">{{this.Product_Details}}.</p>
+                <p class="card-text">{{this.Product_Barcode}}.</p>
+                {{!-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+            </div>
+        </div>
+        {{else}}
+        <h1> No product</h1>
+        {{/each}}
+    </div>
+</div>
