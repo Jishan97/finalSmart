@@ -29,6 +29,10 @@ const todoSchema = new Schema({
   Product_Details:{
     type:String,
     required:true
+  },
+  Product_Type:{
+    type:String,
+    required:true
   }
 });
 

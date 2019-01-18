@@ -163,6 +163,7 @@ app.post('/point', upload.single('image'), async (req, res) => {
   const product_title=req.body.product_title;
   const product_barcode=req.body.product_barcode;
   const product_details=req.body.product_details;
+  const product_type=req.body.product_type;
 
   console.log(product_name);
   var point = new Point({
@@ -171,7 +172,8 @@ app.post('/point', upload.single('image'), async (req, res) => {
     Product_Price:product_price,
     Product_Title:product_title,
     Product_Barcode:product_barcode,
-    Product_Details:product_details
+    Product_Details:product_details,
+    Product_Type:product_type
   })
   point.save()
   .then((url)=>{
@@ -236,7 +238,7 @@ app.post('/new', upload.single('image'), async (req, res) => {
 })
 
 
-const PORT = process.env.PORT || 7777
+const port = process.env.PORT || 7777
 app.listen(PORT, () => {
-  console.log(`Server is running ${PORT}`)
+  console.log(`Server is running ${port}`)
 })
